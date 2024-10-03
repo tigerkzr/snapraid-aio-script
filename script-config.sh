@@ -11,8 +11,8 @@ CONFIG_VERSION="3.3.2"
 # Address where the output will be emailed to.
 # If you do not want to receive emails and rely on other notification
 # methods, leave these fields empty.
-EMAIL_ADDRESS="destination-email-goes-here"
-FROM_EMAIL_ADDRESS="sender-email-goes-here"
+EMAIL_ADDRESS="tigerkzr+sraid@gmail.com"
+FROM_EMAIL_ADDRESS="adhdtiger.net@gmail.com"
 
 # Check for script updates.
 # On each run, the script will check via GitHub if there's an update, and will
@@ -40,8 +40,8 @@ TELEGRAM_CHAT_ID="your-chat-id-here"
 # Set 1 to enable.
 # To get your Webhook URL go to the channel settings -> Integrations and
 # create a web hook
-DISCORD=0
-DISCORD_WEBHOOK_URL="your-webhook-url"
+DISCORD=1
+DISCORD_WEBHOOK_URL="https://discord.com/api/webhooks/1035583969175015444/JLRSR-nxskaNEvt1EjwFeLM6oFQsg6UE4RW9yuwOOLavSpWnrrlO0Jziz9ecg3rr4kar"
 
 # Custom notification service
 # Set this to a script/service to be used instead of the default email
@@ -87,7 +87,7 @@ SCRUB_AGE=10
 
 # Scrub new blocks after sync that have yet to be scrubbed. 1 to enable and any
 # other value to disable.
-SCRUB_NEW=0
+SCRUB_NEW=1
 
 # Set number of script runs before running a scrub. Use this option if you
 # don't want to scrub the array every time.
@@ -126,20 +126,20 @@ VERBOSITY=0
 # To enable retention, set RETENTION_DAYS to the days of output you want to
 # keep in your home folder. Files will have timestamps.
 # SNAPRAID_LOG_DIR can be changed to any folder you like.
-RETENTION_DAYS=0
+RETENTION_DAYS=5
 SNAPRAID_LOG_DIR="$HOME"
 
 # Set the option to log SMART info collected by SnapRAID. 
 # Use SMART_LOG_NOTIFY to send the output to Telegram/Discord
 # 1 to enable, any other value to disable.
 SMART_LOG=1
-SMART_LOG_NOTIFY=0
+SMART_LOG_NOTIFY=1
 
 # Run 'snapraid status' command to show array general information.
 # Use SNAP_STATUS_NOTIFY to send the output to Telegram/Discord
 # 1 to enable, any other value to disable.
-SNAP_STATUS=0
-SNAP_STATUS_NOTIFY=0
+SNAP_STATUS=1
+SNAP_STATUS_NOTIFY=1
 
 # SnapRAID configuration file location. The default path works on most 
 # installations, including OMV6.
