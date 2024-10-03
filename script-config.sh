@@ -216,7 +216,7 @@ AFTER_HOOK_CMD=""
 # Please make changes only if you know what you're doing
 
 # location of the snapraid binary
-SNAPRAID_BIN="/usr/bin/snapraid"
+SNAPRAID_BIN="/usr/local/bin/snapraid"
 # location of the mail program binary
 MAIL_BIN="/usr/bin/mailx"
 
